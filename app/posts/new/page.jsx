@@ -1,5 +1,7 @@
-export const Page = () => {
-  return <div>
+const Page = () => {
+  return (<div>
     <h1>Create a new post</h1>
-  </div>
+  </div>)
 };
+
+export default Page;

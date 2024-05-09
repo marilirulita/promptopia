@@ -1,7 +1,10 @@
-const layout = () => {
-  return <div>
+const Layout = ({ children }) => {
+  return(
+  <body>
+    {children}
     <p>navigate to top</p>
-  </div>
+  </body>
+  )
 };
 
-export default layout;
+export default Layout;
