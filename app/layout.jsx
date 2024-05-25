@@ -7,20 +7,20 @@ export const metadata = {
   title: 'Promptopia',
   description: 'Discover prompts & share from AI'
 } 
-const layout = ({children}) => {
-  return (
+const layout = ({children}) => (
     <html Lang='en'>
       <body>
-      <Nav />
+        <Provider>
         <div className='main'>
           <div className='gradient' />
         </div>
         <main className='app'>
+        <Nav />
           {children}
         </main>
+        </Provider>
       </body>
     </html>
   )
-}
 
-export default layout
+export default layout;
