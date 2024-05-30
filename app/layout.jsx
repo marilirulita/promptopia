@@ -8,7 +8,7 @@ export const metadata = {
   description: 'Discover prompts & share from AI'
 } 
 const layout = ({children}) => (
-    <html Lang='en'>
+    <html lang='en'>
       <body>
         <Provider>
         <div className='main'>
