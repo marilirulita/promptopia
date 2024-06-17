@@ -17,6 +17,7 @@ const Nav = () => {
       
       setProviders(response);
     })();
+
   }, []);
 
   return (
@@ -90,8 +91,9 @@ const Nav = () => {
                   </Link>
                   <button
                   type="button"
-                  onClick={() => {setToggleDropdown(false); signOut();}}
-                  signOut
+                  onClick={() => {
+                    setToggleDropdown(false); signOut();
+                  }}
                   className="mt-5 w-full black_btn">
                     Sign Out
                   </button>
