@@ -17,7 +17,7 @@ export const GET = async (request, {params}) => {
 
 // PATCH edit
 export const PATCH = async (request, {params}) => {
-  const {prompt, tag} = await request.JSON();
+  const {prompt, tag} = await request.json();
 
   try {
     await connectToDB();
