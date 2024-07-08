@@ -1,9 +1,7 @@
 import { MongoClient } from "mongodb";
-                                  
-const url = "mongodb+srv://marilirulita:DvNdpBvHZOiVbyNf@promptopia.bp93xi6.mongodb.net/?retryWrites=true&w=majority&appName=promptopia";
 
 // Connect to your Atlas cluster
-const client = new MongoClient(url);
+const client = new MongoClient(process.env.MONGODB_URI);
 
 async function run() {
     try {
